@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+float calculateTotalCost(float initialPrice, float salesTax) {
+
+    float totalCost = initialPrice + (initialPrice * salesTax);
+
+    return totalCost;
+
+}
+
+int main() {
+
+    float initialPrice, salesTax, totalCost;
+
+    printf("Enter the initial price of the car: ");
+
+    scanf("%f", &initialPrice);
+
+    printf("Enter the sales tax (in decimal form): ");
+
+    scanf("%f", &salesTax);
+
+    totalCost = calculateTotalCost(initialPrice, salesTax);
+
+    printf("The total cost of the car is: $%.2f\n", totalCost);
+
+    return 0;
+
+}
